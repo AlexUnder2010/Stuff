@@ -2,12 +2,9 @@ client
 dev tun
 proto tcp
 remote vpn.zaborona.help 1194
-nobind
 remote-cert-tls server
 cipher AES-128-CBC
 setenv opt ncp-ciphers AES-128-GCM
-persist-key
-persist-tun
 
 <ca>
 -----BEGIN CERTIFICATE-----
