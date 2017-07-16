@@ -1,11 +1,12 @@
+nobind
 client
-dev tun
-proto tcp
-remote vpn.zaborona.help 1194
+remote vpn.zaborona.help
 remote-cert-tls server
 cipher AES-128-CBC
 setenv opt ncp-ciphers AES-128-GCM
-
+#setenv opt block-outside-dns
+dev tun
+proto tcp
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIDOzCCAiOgAwIBAgIJAOZ+WWiLZjjVMA0GCSqGSIb3DQEBCwUAMBgxFjAUBgNV
@@ -28,7 +29,6 @@ DMwC41oj8XJlY2N5ieqhINYCtNOa+9REoJP9fycoNMpcejbF/UeEdZtpCfRHAE7h
 BvStsSqP1Gl9ZeCtmntI
 -----END CERTIFICATE-----
 </ca>
-
 <cert>
 -----BEGIN CERTIFICATE-----
 MIIDWzCCAkOgAwIBAgIBAjANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1aYWJv
@@ -51,7 +51,6 @@ CfG+gSIJ8Gg1VfsaX2qKgoBNW5or6RSxdBKCiVgLL3GSITlkrrN0O7VvT8C/qDJs
 pk/mgRCDARL8jLwtaRV0xrDAnSPyuctRpHc6BFJzDKerX7ABCgOOcTUAr8SbbSc=
 -----END CERTIFICATE-----
 </cert>
-
 <key>
 -----BEGIN PRIVATE KEY-----
 MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDREwxkcSBSYfky
