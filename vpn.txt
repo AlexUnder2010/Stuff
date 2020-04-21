@@ -7,8 +7,6 @@ setenv opt ncp-ciphers AES-128-GCM
 #setenv opt block-outside-dns
 dev tun
 proto tcp
-pull-filter ignore "ifconfig-ipv6 "
-pull-filter ignore "route-ipv6 "
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIDOzCCAiOgAwIBAgIJAOZ+WWiLZjjVMA0GCSqGSIb3DQEBCwUAMBgxFjAUBgNV
