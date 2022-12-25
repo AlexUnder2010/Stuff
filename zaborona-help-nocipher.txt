@@ -3,7 +3,19 @@ client
 remote srv8.vpn.zaborona.help
 proto udp
 #setenv opt block-outside-dns
-cipher none
+auth sha1
+
+# --- OpenVPN Client v2.4 and below ---
+#cipher none
+#or
+#cipher BF-CBC
+# --- OpenVPN Client v2.4 and below ---
+
+# --- OpenVPN Client v2.5 and higher ---
+#data-ciphers BF-CBC
+#data-ciphers-fallback BF-CBC
+# --- OpenVPN Client v2.5 and higher ---
+
 dev tun
 <ca>
 -----BEGIN CERTIFICATE-----
